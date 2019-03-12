@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@vtex/vtex-scripts/test-utils";
+import { render } from "@vtex/test-tools/react";
 import TsComponent from "./TsComponent";
 
 test("should render the example in TypeScript", () => {

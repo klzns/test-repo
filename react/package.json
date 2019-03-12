@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "vtex-scripts test"
+    "test": "vtex-test"
   },
   "dependencies": {
     "graphql": "^14.1.1",

@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@vtex/vtex-scripts/test-utils";
+import { render } from "@vtex/test-tools/react";
 import GraphqlComponent from "./GraphqlComponent";
 import GET_BOOKS from './query.graphql'
 
