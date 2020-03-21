@@ -12,7 +12,26 @@ const hasChangelog = danger.git.modified_files.includes("CHANGELOG.md")
 const isTrivial = (pr.body + pr.title).includes("#trivial")
 
 if (!hasChangelog && !isTrivial) {
-  warn("Please add a changelog entry for your changes.")
+  warn(`Thanks for your contribution!
+  We follow [keepachangelog](https://keepachangelog.com/) standards.
+
+  Please, change the file \`CHANGELOG.md\` adding a small summary of your changes under the \`[Unreleased]\` section. Example:
+
+  \`\`\`diff
+  ## [Unreleased]
+
+  + ### Fixed
+  + - Issue with image sizing in the SKU Selector.
+  \`\`\`
+
+  Possible types of changes:
+  - \`Added\` for new features.
+  - \`Changed\` for changes in existing functionality.
+  - \`Deprecated\` for soon-to-be removed features.
+  - \`Removed\` for now removed features.
+  - \`Fixed\` for any bug fixes.
+  - \`Security\` in case of vulnerabilities.
+  `)
 }
 
 // Check if the version was added as one of the CHANGELOG.md changes
