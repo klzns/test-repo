@@ -1,4 +1,4 @@
-const {danger, warn, } = require('danger')
+const {danger, warn, message } = require('danger')
 
 const pr = danger.github.pr
 
@@ -12,7 +12,7 @@ const hasChangelog = danger.git.modified_files.includes("CHANGELOG.md")
 const isTrivial = (pr.body + pr.title).includes("#trivial")
 
 if (!hasChangelog && !isTrivial) {
-  warn(`Thanks for your contribution!
+  error(`Thanks for your contribution!
   We follow [keepachangelog](https://keepachangelog.com/) standards.
 
   Please, change the file \`CHANGELOG.md\` adding a small summary of your changes under the \`[Unreleased]\` section. Example:
@@ -38,6 +38,7 @@ if (!hasChangelog && !isTrivial) {
 function getAddedChangelogLines() {
   return danger.git.diffForFile('CHANGELOG.md')
     .then((result) => {
+      console.log(result)
       return result.diff
         .split('\n')
         .filter((line) => line.indexOf('+') === 0)
@@ -55,7 +56,7 @@ if (hasChangelog && !isTrivial) {
     .then(result => {
       const wrongLine = findWrongChangelogEntries(result)
       if (wrongLine) {
-        fail(`Please remove the line \`${wrongLine}\` from \`CHANGELOG.md\`\nThis will be automatically added once this PR is merged.`)
+        fail(`Please remove the line \`${wrongLine}\` from \`CHANGELOG.md\`\nThis will be automatically added once this PR is merged.`, 'CHANGELOG.md')
       }
     })
 }
