@@ -20,6 +20,6 @@ jobs:
         node-version: 12.x
 
     - name: Danger JS Action
-      uses: danger/danger-js@9.1.
+      uses: danger/danger-js@9.1.6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
