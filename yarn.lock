@@ -542,10 +542,10 @@ cssom@0.3.x, "cssom@>= 0.3.0 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
-danger-plugin-keepachangelog@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/danger-plugin-keepachangelog/-/danger-plugin-keepachangelog-1.0.0.tgz#83ea25b39eac2ff049afc6f70e6552aaf713db7f"
-  integrity sha512-EZmIXlLuQ9Uh6J4JdRoWy2haCG5Nkh5BZeTYeiyHKC/4/HEthMC4K/yQD/72Tk+iMrTP8pgTfwmMkjJSw4eP7A==
+danger-plugin-keepachangelog@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/danger-plugin-keepachangelog/-/danger-plugin-keepachangelog-1.0.1.tgz#379a76c66594f64dd650eafcd00f03aedc500682"
+  integrity sha512-LD6DiGeHW0BaPTxwTvFMR5+YFSJf2tdOsdBCs5oL/RV8yzXrC6cbncSdApFBvs5f1bs6nYkQT7ts5h9JXzRylw==
   optionalDependencies:
     esdoc "^0.5.2"
 

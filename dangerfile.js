@@ -1,5 +1,5 @@
 const {danger, warn, message } = require('danger')
-const keepachangelog = require('danger-plugin-keepachangelog')
+const { keepachangelog } = require('danger-plugin-keepachangelog')
 
 const pr = danger.github.pr
 
