@@ -3,6 +3,11 @@ const { keepachangelog } = require('danger-plugin-keepachangelog')
 
 const pr = danger.github.pr
 
+if (pr.user.type === 'Bot') {
+  warn('Skipping Danger checks: author of PR its a bot.')
+  return
+}
+
 // No PR is too small to include a description of why you made a change
 if (pr.body.length < 10) {
   warn('Please include a description of your PR changes.');
