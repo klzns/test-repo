@@ -13,7 +13,7 @@ if (pr.body.length < 10) {
   warn('Please include a description of your PR changes.');
 }
 
-keepachangelog({ changeVersion: false })
+keepachangelog()
 
 // Add helpful message
 if (pr.author_association !== 'OWNER' && pr.maintainer_can_modify === false) {
