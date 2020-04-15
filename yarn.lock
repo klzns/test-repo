@@ -103,10 +103,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.2.tgz#ace1880c03594cc3e80206d96847157d8e7fa349"
   integrity sha512-bnoqK579sAYrQbp73wwglccjJ4sfRdKU7WNEZ5FW4K2U6Kc0/eZ5kvXG0JKsEKFB50zrFmfFt52/cvBbZa7eXg==
 
-"@vtex/danger@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@vtex/danger/-/danger-0.0.14.tgz#e55f422bea84485d8b1842e7b842207dfa4a55d1"
-  integrity sha512-ftYlHGJQ6wXeRKZZFYmAqz+5rTNg/NO+TriFKtDwai4HmAGr/zMfyN6KB+GM4YxHTkdQQJeFgQXUPMFvyJ3kfg==
+"@vtex/danger@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@vtex/danger/-/danger-0.0.15.tgz#7189a161100a96ebd1472ab290bc537e806f5154"
+  integrity sha512-TZDOpXj0edd6EIiphQ634aKqAbg66wcfvTInOixR7oeVQ3LCAOGE7nuw1JpwKIKquvL+6RGnHabto8L96EfPdw==
   dependencies:
     danger "^10.0.0"
     danger-plugin-keepachangelog "^1.0.5"
