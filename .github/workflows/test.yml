@@ -26,7 +26,7 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: yarn install
         run: yarn install --frozen-lockfile
-      - uses: vtex/action-danger@master
+      - uses: vtex/danger@master
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
   io-app-test:
