@@ -16,7 +16,7 @@ jobs:
           RUNNER_TEMP: /tmp
       - name: yarn install
         run: yarn install --frozen-lockfile
-      - uses: vtex/danger@master
+      - uses: vtex/danger@0.0.3
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           REQUIRE_CHANGELOG_VERSION: true
