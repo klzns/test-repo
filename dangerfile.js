@@ -5,6 +5,6 @@ console.log(JSON.stringify(process.env, null, 2));
 
 assert({
   keepachangelog: {
-    changeVersion: true,
+    changeVersion: false,
   },
 });
