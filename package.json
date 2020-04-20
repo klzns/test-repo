@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@vtex/danger": "^0.0.19",
+    "@vtex/danger": "^0.0.20",
     "danger": "^10.1.1",
     "danger-plugin-keepachangelog": "^1.0.5"
   }
