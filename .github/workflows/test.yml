@@ -29,7 +29,7 @@ jobs:
       - uses: vtex/danger@master
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-          REQUIRE_CHANGELOG_VERSION: false
+          REQUIRE_CHANGELOG_VERSION: true
 
   # io-app-test:
   #   name: IO app test
