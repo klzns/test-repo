@@ -215,10 +215,10 @@
   dependencies:
     "@types/node" "*"
 
-"@vtex/danger@^0.0.20":
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/@vtex/danger/-/danger-0.0.20.tgz#5e8cbe8eedd3e98c54e894b3ed0b29f304228218"
-  integrity sha512-EzlXx+0vRS0hXdaD1bnl9rc2ZCkrnXYMPf9dHI8ZNs7JeQ6qehzpMVV6VA7Me4RgLpIY3Peoyby61Na4SktUWA==
+"@vtex/danger@^0.0.22":
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/@vtex/danger/-/danger-0.0.22.tgz#a89be111aaa1eb7399d13d605b05560b1390c67a"
+  integrity sha512-LV9yL9OuGGmkBd+q0Tgg6BBm47MwWzGAcz4deHnMXFX13RT3hLDz3AwTG06867zRynn/7okG3pc7MNje6WTGig==
   dependencies:
     actions-toolkit "^4.0.0"
     danger "^10.0.0"
