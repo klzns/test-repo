@@ -4,8 +4,8 @@ name: PR actions
     branches:
       - master
 jobs:
-  danger-ci:
-    name: Danger CI
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -14,8 +14,5 @@ jobs:
           node-version: 12.x
         env:
           RUNNER_TEMP: /tmp
-      - uses: vtex/danger@master
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          REQUIRE_CHANGELOG_VERSION: false
-          foo: false
+      - name: Lint project
+        uses: vtex/action-lint@master
