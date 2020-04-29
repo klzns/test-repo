@@ -15,4 +15,4 @@ jobs:
         env:
           RUNNER_TEMP: /tmp
       - name: Lint project
-        uses: vtex/action-lint@master
+        uses: vtex/action-lint@beta
